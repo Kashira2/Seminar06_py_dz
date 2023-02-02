@@ -61,6 +61,7 @@ def game_o(arr, player_o, print_arr):                              # Функц�
 
 def condition(arr, game1, game2, player_x, print_arr, player_o):          # Функция с условиями, при которых побеждают игроки
     hod = 2
+    time_draw = 0
     print_arr(arr)
     for i in range(9):
         if arr[0][2] == 'X' and arr[1][1] == 'X' and arr[2][0] == 'X':   
@@ -114,9 +115,13 @@ def condition(arr, game1, game2, player_x, print_arr, player_o):          # Фу
         elif hod % 2 == 0:   
             game1(arr, player_x, print_arr)
             hod += 1
+            time_draw += 1
         else:
             game2(arr, player_o, print_arr)
             hod += 1
+            time_draw += 1
+        if time_draw == 9:
+            print('У вас ничья')
             
 #########################################################################################################################################
 

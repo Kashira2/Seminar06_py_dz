@@ -1,29 +1,5 @@
 from random import randint as R
 
-# def play_bot(total_candy):
-#     if total_candy > 57:
-#             total_candy -= 28
-#             print(f'Бот забрал 28 конфет. Осталось конфет: {total_candy}')
-#     elif total_candy <= 57:
-#         sum = 0
-#         while not total_candy > 29:
-#             total_candy -= 1
-#             sum += 1
-#         print(f'Бот забрал {sum}. Осталось конфет: {total_candy}')
-#     else:
-#         print('Вы проиграли')
-#     return total_candy
-
-# def player_game(total_candy):
-#     if total_candy > 28:
-#         num1 = int(input('Введите колличество конфет, которое вы хотите взять: '))
-#         total_candy -= num1
-#         print(f'Осталось конфет: {total_candy}')
-#     else:
-#         print('Вы победили.')
-#     return total_candy
-
-
 print('На столе 100 конфет. Взять можно не более 28ми конфет за ход. Победит тот, чей ход будет последний.')
 num = input('Введите любой символ, чтобы провести жеребьевку')
 random_player = R(0,1)
