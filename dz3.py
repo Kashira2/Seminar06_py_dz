@@ -1,3 +1,9 @@
+# Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
+# Входные и выходные данные хранятся в отдельных текстовых файлах.
+# aaaaabbbcccc -> 5a3b4c
+# 5a3b4c -> aaaaabbbcccc
+
+
 def open_data(num1, my_list):
     for i in range(len(num1) - 1):
         if num1[i].isdigit():
